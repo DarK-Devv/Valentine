@@ -116,11 +116,10 @@ function fleeFromCursor(mouseX, mouseY) {
         noBtn.style.left = (newX - noBtnRect.width / 2) + 'px';
         noBtn.style.top = (newY - noBtnRect.height / 2) + 'px';
 
-        // Change text
+        // Change text - cycle through messages
         noClickCount++;
-        if (noClickCount < noMessages.length) {
-            noBtnText.textContent = noMessages[noClickCount];
-        }
+        const messageIndex = noClickCount % noMessages.length;
+        noBtnText.textContent = noMessages[messageIndex];
 
         // Shake effect
         if (noClickCount > 3) {
