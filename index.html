@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Valentine? ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Main Question Screen -->
+    <div class="main-screen" id="mainScreen">
+        <div class="content">
+            <h1 class="main-heading">Will you be my Valentine?</h1>
+            <p class="sub-text">Choose wisely... 💕</p>
+            
+            <div class="buttons-container">
+                <button class="btn btn-yes" id="yesBtn">
+                    <span>YES</span>
+                    <span class="heart-icon">❤️</span>
+                </button>
+                <button class="btn btn-no" id="noBtn">
+                    <span id="noBtnText">NO</span>
+                    <span class="emoji">😅</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Celebration Screen -->
+    <div class="celebration-screen" id="celebrationScreen">
+        <div class="confetti-container" id="confettiContainer"></div>
+        <div class="celebration-content">
+            <h1 class="celebration-heading">YAY! 🎉</h1>
+            <p class="celebration-message">Best choice ever! ❤️</p>
+            <p class="celebration-sub">You just made my day!</p>
+            <div class="heart-explosion" id="heartExplosion"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
